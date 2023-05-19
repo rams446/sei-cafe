@@ -2,7 +2,7 @@ require('dotenv').config();
 require('./database');
 
 const Category = require('../models/Category');
-const Item = require('../models/item');
+const Item = require('../models/Item');
 
 (async function() {
 
