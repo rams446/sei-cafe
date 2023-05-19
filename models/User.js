@@ -22,6 +22,7 @@ const userSchema = new Schema({
   }, {
     timestamps: true,
     // Even though it's hashed - don't serialize the password
+    //before return password it deletes
     toJSON: {
       transform: function(doc, ret) {
         delete ret.password;
